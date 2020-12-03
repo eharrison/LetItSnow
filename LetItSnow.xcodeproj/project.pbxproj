@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		6C94C966257862DE008C9E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C94C964257862DE008C9E3F /* LaunchScreen.storyboard */; };
 		6C94C971257862DE008C9E3F /* LetItSnowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C94C970257862DE008C9E3F /* LetItSnowTests.swift */; };
 		6C94C97C257862DE008C9E3F /* LetItSnowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C94C97B257862DE008C9E3F /* LetItSnowUITests.swift */; };
+		6C94C98E257864B5008C9E3F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 6C94C98D257864B5008C9E3F /* Lottie */; };
+		6C94C99325786515008C9E3F /* SnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C94C99225786515008C9E3F /* SnowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		6C94C977257862DE008C9E3F /* LetItSnowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetItSnowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C94C97B257862DE008C9E3F /* LetItSnowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetItSnowUITests.swift; sourceTree = "<group>"; };
 		6C94C97D257862DE008C9E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C94C99225786515008C9E3F /* SnowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C94C98E257864B5008C9E3F /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +106,7 @@
 				6C94C959257862DC008C9E3F /* AppDelegate.swift */,
 				6C94C95B257862DC008C9E3F /* SceneDelegate.swift */,
 				6C94C95D257862DC008C9E3F /* ViewController.swift */,
+				6C94C99225786515008C9E3F /* SnowView.swift */,
 				6C94C95F257862DC008C9E3F /* Main.storyboard */,
 				6C94C962257862DE008C9E3F /* Assets.xcassets */,
 				6C94C964257862DE008C9E3F /* LaunchScreen.storyboard */,
@@ -144,6 +149,9 @@
 			dependencies = (
 			);
 			name = LetItSnow;
+			packageProductDependencies = (
+				6C94C98D257864B5008C9E3F /* Lottie */,
+			);
 			productName = LetItSnow;
 			productReference = 6C94C956257862DC008C9E3F /* LetItSnow.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 6C94C94D257862DC008C9E3F;
+			packageReferences = (
+				6C94C98C257864B5008C9E3F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 6C94C957257862DC008C9E3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +272,7 @@
 				6C94C95E257862DC008C9E3F /* ViewController.swift in Sources */,
 				6C94C95A257862DC008C9E3F /* AppDelegate.swift in Sources */,
 				6C94C95C257862DC008C9E3F /* SceneDelegate.swift in Sources */,
+				6C94C99325786515008C9E3F /* SnowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +605,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C94C98C257864B5008C9E3F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C94C98D257864B5008C9E3F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C94C98C257864B5008C9E3F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6C94C94E257862DC008C9E3F /* Project object */;
 }
